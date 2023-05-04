@@ -394,8 +394,8 @@ textarea {
  * ------------------------------------------------------------------- */
 
 .row {
-  width: 94%;
-  max-width: 1170px;
+  /* width: 94%; */
+  /* max-width: 1170px; */
   margin: 0 auto;
 }
 
@@ -890,6 +890,12 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
