@@ -1,2 +1,2 @@
-# DLofiStudio.github.io
+# dlofistudio.github.io
 D Lofi Studio 
