@@ -2402,7 +2402,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #testimonial-slider .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 #testimonial-slider .owl-dots .owl-dot span {
@@ -2477,8 +2477,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * ------------------------------------------------------------------- */
 
 #download {
-  background: #39b54a;
-  color: #b2fabc;
+  /* background: #39b54a; */
+  /* color: #b2fabc; */
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
@@ -2497,7 +2497,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 #download .lead {
-  color: #b2fabc;
+  color: #ffffff;
   margin-top: 2.8rem;
 }
 
@@ -2561,7 +2561,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 footer {
   padding-top: 9rem;
   padding-bottom: 4.2rem;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   line-height: 2.7rem;
   color: rgba(255, 255, 255, 0.25);
   display: flex;
