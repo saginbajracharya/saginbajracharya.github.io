@@ -2844,6 +2844,7 @@ footer ul a:visited {
   }
 }
 
+
 @media only screen and (max-width: 600px) {
   .footer-main .row {
     max-width: 480px;
