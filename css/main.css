@@ -1126,7 +1126,7 @@ h1.intro-header {
 #header {
   width: 100%;
   height: 72px;
-  background-color: #111111;
+background-color: #141515;
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1158,10 +1158,10 @@ h1.intro-header {
   padding: 0;
   outline: 0;
   border: none;
-  width: 97px;
-  height: 22px;
+  width: 150px;
+  height: 34px;
   background: url("../images/logo.png") no-repeat center;
-  background-size: 97px 22px;
+  background-size: 80%; /* Use 'contain' to maintain the aspect ratio */
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1451,7 +1451,7 @@ h1.intro-header {
 }
 
 .home-content-left {
-  padding: 15rem 0 22rem 40px;
+  padding: 15rem 0 10rem 40px;
   position: relative;
   /* width: 50%; */
 }
@@ -1540,6 +1540,17 @@ h1.intro-header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
+}
+
+.home-social-list::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 42px; /* Adjust the height as needed */
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px; /* Add margin-top to separate it from the icons */
 }
 
 .home-social-list li {
@@ -2537,6 +2548,19 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   background-image: url("../images/google-play.png");
 }
 
+.download-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-bottom: 50px;
+}
+
+.download-badges img {
+  width: 250px; /* Adjust the width to make it smaller */
+  height: auto; /* Maintain the aspect ratio */
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2863,3 +2887,47 @@ footer ul a:visited {
 
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* Custom CSS for App Showcase */
+.app-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Apply padding only for screens with a minimum width of 768px (adjust as needed for your breakpoint) */
+@media (min-width: 768px) {
+  .app-list {
+    padding-right: 100px;
+  }
+}
+
+/* Apply padding for screens greater than 768px */
+@media (min-width: 769px) {
+  .app-list {
+    padding-left: 50px; /* Add left padding */
+  }
+}
+
+.app {
+  text-align: center;
+  margin: 20px;
+}
+
+.app a {
+  text-decoration: none;
+  color: #333;
+}
+
+.app img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto 10px;
+}
+
+.app p {
+  font-size: 16px;
+  color: #ffffff;
+}
